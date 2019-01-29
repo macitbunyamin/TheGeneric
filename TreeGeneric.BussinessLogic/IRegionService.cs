@@ -18,5 +18,6 @@ namespace TreeGeneric.BussinessLogic
         Region FindByName(string name);
         IEnumerable<Region> GetAll();
         IEnumerable<Region> GetAll(Expression<Func<Region, bool>> where);
+
     }
 }
