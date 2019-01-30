@@ -28,8 +28,10 @@ namespace TreeGeneric.Model
         [Display(Name = "Stokta Kalan Adet")]
         public int AvailabilityCount { get; set; }
         public virtual ICollection<Donation> Donations { get; set; }
+        public virtual ICollection<Region> Regions { get; set; }
 
-        public int RegionId { get; set; }
-        public virtual Region Region { get; set; }
+
+    /* public int RegionId { get; set; }
+        public virtual Region Region { get; set; } */
     }
 }

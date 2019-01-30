@@ -56,6 +56,11 @@
     <Compile Include="Builders\TreeTypeBuilder.cs" />
     <Compile Include="Builders\UserBuilder.cs" />
     <Compile Include="IRepository.cs" />
+    <Compile Include="Migrations\201901300716064_ınitialCreate.cs" />
+    <Compile Include="Migrations\201901300716064_ınitialCreate.Designer.cs">
+      <DependentUpon>201901300716064_ınitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
   </ItemGroup>
@@ -68,6 +73,11 @@
       <Project>{71e5ed14-153a-4520-a32f-17ecdf890336}</Project>
       <Name>TreeGeneric.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201901300716064_ınitialCreate.resx">
+      <DependentUpon>201901300716064_ınitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
